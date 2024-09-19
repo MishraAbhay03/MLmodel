@@ -7,7 +7,7 @@ import streamlit as st
 
 @st.cache_data
 def load_data():
-    data = pd.read_csv(r'C:\Users\Abhay\OneDrive\Desktop\New folder\laptop_price.csv')  
+    data = pd.read_csv('laptop_price.csv')  
     return data
 
 @st.cache_resource
