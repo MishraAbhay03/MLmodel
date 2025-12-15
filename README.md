@@ -26,7 +26,19 @@ A machine learning project to predict laptop prices based on various specificati
 ---
 
 ## 📂 Project Structure
-laptop-price-prediction/ ├── data/ │ ├── raw_data.csv # Raw dataset │ ├── cleaned_data.csv # Preprocessed dataset ├── models/ │ ├── final_model.pkl # Trained machine learning model │ ├── cnn_model.h5 # Trained CNN model ├── notebooks/ │ ├── data_analysis.ipynb # Exploratory Data Analysis (EDA) │ ├── model_training.ipynb # Model training and evaluation ├── app/ │ ├── app.py # Flask or Streamlit application │ ├── templates/ # HTML templates (if applicable) ├── requirements.txt # Python dependencies ├── README.md # Project documentation └── LICENSE # License file
+laptop-price-prediction/ 
+├── data/ │ 
+├── raw_data.csv # Raw dataset │ 
+├── cleaned_data.csv # Preprocessed dataset 
+├── models/ │ 
+├── final_model.pkl # Trained machine learning model │ 
+├── cnn_model.h5 # Trained CNN model ├── notebooks/ │ 
+├── data_analysis.ipynb # Exploratory Data Analysis (EDA) │ 
+├── model_training.ipynb # Model training and evaluation ├── app/ │ 
+├── app.py # Flask or Streamlit application │ 
+├── templates/ # HTML templates (if applicable) 
+├── requirements.txt # Python dependencies 
+├── README.md # Project documentation └── LICENSE # License file
 
 
 ## 📊 Dataset
