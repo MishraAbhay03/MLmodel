@@ -11,7 +11,7 @@
 
 ## 📌 Overview
 
-This project predicts laptop prices based on specifications such as RAM, processor, storage, GPU, display size, and brand. It uses ensemble machine learning models trained on real-world laptop pricing data and serves predictions through an interactive Streamlit dashboard.
+This project predicts laptop prices based on specifications such as RAM, processor, storage, GPU, display size, and brand using ensemble ML models with an interactive Streamlit dashboard.
 
 ---
 
@@ -22,7 +22,6 @@ This project predicts laptop prices based on specifications such as RAM, process
 - ✅ Ensemble ML models (Random Forest, Gradient Boosting)
 - ✅ Interactive **Streamlit** UI for instant predictions
 - ✅ EDA visualizations and price distribution analysis
-- ✅ FastAPI REST endpoint via separate API repo
 
 ---
 
@@ -33,7 +32,7 @@ laptop-price-predictor/
 ├── app.py                  # FastAPI backend
 ├── Streamlit_app.py        # Streamlit frontend
 ├── laptop_price.csv        # Dataset
-├── requirements.txt        # Dependencies
+├── requirements.txt
 └── README.md
 ```
 
@@ -41,56 +40,18 @@ laptop-price-predictor/
 
 ## 🚀 Getting Started
 
-### Installation
-
 ```bash
 git clone https://github.com/MishraAbhay03/laptop-price-predictor.git
 cd laptop-price-predictor
 pip install -r requirements.txt
-```
-
-### Run Streamlit App
-
-```bash
 streamlit run Streamlit_app.py
 ```
-
-### Run FastAPI Backend
-
-```bash
-uvicorn app:app --reload
-```
-
----
-
-## 📊 Input Features
-
-| Feature | Description |
-|---|---|
-| Brand | Dell, HP, Lenovo, Apple, etc. |
-| RAM | 4GB, 8GB, 16GB, 32GB |
-| Storage | SSD/HDD size |
-| Processor | Intel i3/i5/i7, AMD Ryzen |
-| GPU | Integrated / Dedicated |
-| Display | Screen size & resolution |
-| OS | Windows, macOS, Linux |
-
----
-
-## 🛠️ Tech Stack
-
-| Category | Tools |
-|---|---|
-| ML | Scikit-learn, Pandas, NumPy |
-| Web App | Streamlit |
-| API | FastAPI |
-| Visualization | Matplotlib, Seaborn |
 
 ---
 
 ## 👤 Author
 
-**Abhaykumar Mishra** — [GitHub](https://github.com/MishraAbhay03) · [LinkedIn](https://linkedin.com/in/YOUR_LINKEDIN)
+**Abhaykumar Mishra** — [GitHub](https://github.com/MishraAbhay03) · [LinkedIn](https://www.linkedin.com/in/abhaykumar-mishra-791a38300)
 
 ---
 
