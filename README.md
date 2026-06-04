@@ -1,54 +1,37 @@
-# 💻 Laptop Price Predictor — ML Web App
+# 💻 Laptop Price Predictor
 
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)](https://scikit-learn.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
-> An ML-powered web application that predicts laptop prices based on hardware specifications — built with Scikit-learn and deployed via Streamlit.
-
----
-
-## 📊 Results
-
-| Metric | Value |
-|--------|-------|
-| Algorithm | Random Forest / Gradient Boosting |
-| Dataset | laptop_price.csv |
-| Interface | Streamlit Web App |
-| Deployment | Local / Streamlit Cloud |
+> ML-powered laptop price prediction with an interactive Streamlit UI — feature engineering, ensemble methods & live price estimates.
 
 ---
 
-## 🔍 Features Used for Prediction
+## 📌 Overview
 
-- Brand & Model
-- Processor (CPU type, cores, speed)
-- RAM (GB)
-- Storage (SSD/HDD, capacity)
-- GPU type
-- Display size & resolution
-- Operating System
-- Weight
+This project predicts laptop prices based on specifications such as RAM, processor, storage, GPU, display size, and brand. It uses ensemble machine learning models trained on real-world laptop pricing data and serves predictions through an interactive Streamlit dashboard.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Key Features
 
-| Layer | Tools |
-|-------|-------|
-| ML | Scikit-learn, Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
-| Web App | Streamlit |
-| Language | Python 3.10+ |
+- ✅ Predicts laptop price from hardware specs
+- ✅ Feature engineering on categorical & numerical attributes
+- ✅ Ensemble ML models (Random Forest, Gradient Boosting)
+- ✅ Interactive **Streamlit** UI for instant predictions
+- ✅ EDA visualizations and price distribution analysis
+- ✅ FastAPI REST endpoint via separate API repo
 
 ---
 
 ## 📁 Project Structure
 
 ```
-├── app.py                  # Flask API
-├── Streamlit_app.py        # Streamlit web interface
+laptop-price-predictor/
+├── app.py                  # FastAPI backend
+├── Streamlit_app.py        # Streamlit frontend
 ├── laptop_price.csv        # Dataset
 ├── requirements.txt        # Dependencies
 └── README.md
@@ -58,40 +41,59 @@
 
 ## 🚀 Getting Started
 
+### Installation
+
 ```bash
-# Clone
-git clone https://github.com/MishraAbhay03/MLmodel.git
-cd MLmodel
-
-# Install
+git clone https://github.com/MishraAbhay03/laptop-price-predictor.git
+cd laptop-price-predictor
 pip install -r requirements.txt
+```
 
-# Run Streamlit app
+### Run Streamlit App
+
+```bash
 streamlit run Streamlit_app.py
 ```
 
-Select laptop specifications from the sidebar dropdowns and the model will predict the estimated price in real time.
+### Run FastAPI Backend
+
+```bash
+uvicorn app:app --reload
+```
 
 ---
 
-## 🔬 ML Pipeline
+## 📊 Input Features
 
-1. **Data Cleaning** — handle missing values, fix dtypes
-2. **Feature Engineering** — encode categorical specs
-3. **Model Training** — compare multiple regressors
-4. **Hyperparameter Tuning** — GridSearchCV
-5. **Deployment** — Streamlit interactive UI
+| Feature | Description |
+|---|---|
+| Brand | Dell, HP, Lenovo, Apple, etc. |
+| RAM | 4GB, 8GB, 16GB, 32GB |
+| Storage | SSD/HDD size |
+| Processor | Intel i3/i5/i7, AMD Ryzen |
+| GPU | Integrated / Dedicated |
+| Display | Screen size & resolution |
+| OS | Windows, macOS, Linux |
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools |
+|---|---|
+| ML | Scikit-learn, Pandas, NumPy |
+| Web App | Streamlit |
+| API | FastAPI |
+| Visualization | Matplotlib, Seaborn |
 
 ---
 
 ## 👤 Author
 
-**Abhaykumar Mishra**  
-M.Sc. Data Science & AI | Mumbai  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/YOUR_LINKEDIN) [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github)](https://github.com/MishraAbhay03)
+**Abhaykumar Mishra** — [GitHub](https://github.com/MishraAbhay03) · [LinkedIn](https://linkedin.com/in/YOUR_LINKEDIN)
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+MIT License — see [LICENSE](LICENSE) for details.
